@@ -14,7 +14,7 @@ app.post('/search-user', async (req, res) => {
 
   setTimeout(async () => {
     try {
-      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      if (!email || !/^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(email)) {
         return res.status(400).json({ message: 'Invalid email' });
       }
 

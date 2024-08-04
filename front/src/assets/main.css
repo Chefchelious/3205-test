@@ -6,3 +6,12 @@
   font-weight: normal;
   padding: 16px;
 }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.wrapper+.wrapper {
+  margin-top: 18px;
+}
